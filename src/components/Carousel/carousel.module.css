@@ -1,0 +1,12 @@
+.movieCard {
+    width: 170px!important;
+    height: 240px;
+}
+.movieCard > img {
+    width: 170px;
+    height: 240px;
+}
+.movieCard > img:hover {
+    cursor: grab;
+    box-shadow: 0 0 5px 5px white;
+}

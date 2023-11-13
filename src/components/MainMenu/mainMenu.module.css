@@ -1,0 +1,107 @@
+.menuContainer {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #040404;
+    transition: 0.5s;
+    opacity: 95%;
+    z-index: 5;
+}
+.menuContainer:hover {
+    width: 330px;
+    animation: menuAnim 0.5s linear;
+}
+.menuContainer .profileSection {
+    display: none;
+}
+.menuContainer:hover .profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 60px;
+    padding-left: 35px;
+    margin-top: 50px;
+}
+.menuContainer .profileSection > img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.menuContainer .profileSection > div {
+    color: white;
+    font-size: 26px;
+}
+.menuContainer .iconsSection .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.menuContainer:hover .iconsSection {
+    height: 60vh;
+}
+.menuContainer:hover .iconsSection .icon {
+    display: flex;
+    justify-content: space-around;
+    width: 260px;
+    height: 60px;
+    border-radius: 12px;
+}
+.menuContainer .iconsSection .icon div {
+    display: none;
+    color: white;
+}
+.menuContainer:hover .iconsSection .icon div {
+    display: block;
+    width: 140px;
+    text-align: left;
+    font-size: 26px;
+}
+.iconsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 5px;
+}
+.icon:hover {
+    cursor: pointer;
+    background-color: #232a3f;
+}
+.icon > img {
+    width: 25px;
+}
+.active {
+    background-color: #232a3f;
+    border-radius: 50%;
+}
+.menuContainer .bottomSide{
+    display: none;
+}
+.menuContainer:hover .bottomSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: #858688;
+    font-size: 24px;
+    padding-left: 55px;
+}
+.bottomSide > div:hover {
+    cursor: pointer;
+    color: #484848;
+}
+
+@keyframes menuAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 95%;
+    }
+}

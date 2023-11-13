@@ -1,0 +1,63 @@
+.container > img {
+    width: 100%;
+    height: 99vh;
+}
+.container > video {
+    width: 100vw;
+    height: 99vh;
+}
+.movieInfoSection {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 36vw;
+    color: white;
+}
+.movieInfoSection > img {
+    width: 450px;
+}
+.category {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #858688;
+}
+.releaseDateSection {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.description {
+    font-size: 22px;
+}
+.buttonsSection {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+.buttonsSection > button {
+    font-size: 22px;
+    width: 180px;
+    border-radius: 40px;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.playBtn {
+    background: #fff;
+    color: black;
+}
+.playBtn:hover {
+    background: #dcdbdb;
+}
+.moreInfoBtn {
+    background: transparent linear-gradient(128deg, #2727F5 0%, #001671 100%) 0% 0% no-repeat padding-box;
+    color: white;
+}
+.moreInfoBtn:hover {
+    background: transparent linear-gradient(128deg, #2020c9 0%, #001155 100%) 0% 0% no-repeat padding-box;
+}

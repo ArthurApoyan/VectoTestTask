@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: tajawal;
+  src: url('src/assets/fonts/Tajawal/Tajawal-Bold.ttf');
+  src: url('src/assets/fonts/Tajawal/Tajawal-Light.ttf');
+}
+body{
+  font-family: tajawal;
+  background-color: black;
+}
